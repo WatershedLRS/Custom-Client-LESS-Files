@@ -1,0 +1,61 @@
+/* Custom Chart Colors */
+/*["#AF6D04","#85458A","#1C5687","#4C7D7A","#BF8A36","#9D6AA1","#49789F","#709795","#CFA768","#B68FB9","#779AB7","#94B1AF","#DFC59B","#CEB5D0","#A4BBCF","#B7CBCA","#EFE2CD","#E7DAE8","#C9DDE7","#DBE5E4"]*/
+
+/* Custom Colors */
+@gray-light: #B2B4AE;
+@gray: #555;
+@gray-dark: #545857;
+@ws-blue-light: @gray;
+@ws-blue: @gray-dark;
+@ws-blue-dark: #FFB500;
+@wsLinkColor: #4C7D7A;
+@white: #ffffff;
+@config-background: #252525;
+@config-link: @white;
+
+/* Rebrand modifications */
+@navbar-default-link-active-bg: @ws-blue-dark;
+@ws-alternate: @ws-blue;
+@ws-secondary-blue-light: @ws-blue-light;
+@wsBigBlockTextColor: @ws-blue;
+@tableRowSelectionColor: @gray-lighter;
+
+/* Main Navbar & Body */
+.navbar-default, body {
+    background: @white;
+}
+
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus, .navbar .navbar-nav .split-button.active {
+    border-right-color: @ws-blue-dark;
+    background-color: @ws-blue-dark;
+}
+
+.navbar .navbar-nav > li > a,
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav .split-button > a,
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus,
+.navbar .navbar-nav .split-button > a:hover {
+    color: @wsLinkColor;
+}
+
+.navbar .navbar-nav .split-button.active > a,
+.navbar .navbar-nav .split-button.active > a:hover {
+    color: @white;
+}
+
+.navbar .navbar-nav .split-button .left {
+    border-right-color: @white;
+}
+
+/* Report Builder */
+.configure-report .carousel .viewport .tray .item.selected .item-name, .configure-dialog .carousel .viewport .tray .item.selected .item-name {
+    background: @ws-blue-dark;
+}
+
+/* Card */
+.card-wrapper .card {
+    border: 1px solid fade(@wsLinkColor, 50%);
+}

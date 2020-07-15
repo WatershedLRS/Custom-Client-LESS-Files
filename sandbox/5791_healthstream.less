@@ -1,0 +1,42 @@
+/* Custom Colors */
+@white: #ffffff;
+@gray: #555;
+@gray-lightest: #f1f1f1;
+@ws-blue: #426184;
+@ws-blue-light: #7898b4;
+@ws-blue-dark: #314b6d;
+@config-background: #252525;
+@config-link: @white;
+
+/* Main Navbar */
+.navbar-default {
+    background-color: @white;
+}
+
+.navbar .navbar-nav > li > a,
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav .split-button > a,
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus,
+.navbar .navbar-nav .split-button > a:hover {
+    color: @gray;
+}
+
+.navbar .navbar-nav .split-button.active > a,
+.navbar .navbar-nav .split-button.active > a:hover {
+    color: @gray-lightest;
+}
+
+.navbar .navbar-nav .split-button {
+    .left {
+        border-right-color: transparent;
+    }
+
+    &.active {
+        .left {
+            border-right-color: @gray-lightest;
+        }
+    }
+}

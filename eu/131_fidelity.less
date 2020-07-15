@@ -1,0 +1,61 @@
+@gray-lighter: #B9BDC4;
+@gray-light: #313740;
+@gray: #20242B;
+@gray-dark: #101215;
+@gray-darker: #00000;
+
+@ws-blue-lighter: #42BDEA;
+@ws-blue-light: #018BC8;
+@ws-blue: #016195;
+@ws-blue-dark: #016195;
+@ws-blue-darker: #00314A;
+
+@wsLinkColor: @ws-blue;
+@white: #FFFFFF;
+@config-background: #252525;
+@config-link: @white;
+
+/* Rebrand modifications */
+@navbar-default-link-active-bg: @ws-blue-dark;
+@ws-alternate: @ws-blue;
+@ws-secondary-blue-light: @ws-blue-light;
+@wsBigBlockTextColor: @ws-blue;
+@tableRowSelectionColor: @gray-lighter;
+
+/* Main Navbar */
+.navbar-default {
+  background-color: @white; //White
+}
+
+//Changes default text color in navbar for Dashboard Data and Explore
+.navbar .main-nav > li > a, .navbar .navbar-nav .split-button > a {
+  color: @gray-dark;
+}
+
+.navbar .navbar-nav .split-button > a:hover, .navbar .navbar-nav .split-button > a:focus {
+  background-color: @ws-blue-dark;
+  color: @white;
+}
+
+//Changes default text color in top right navbar SETTINGS ADMIN HELP
+.navbar .navbar-nav.navbar-right > li > a {
+  background-color: @white;
+  color: @gray-dark;
+}
+
+.navbar .navbar-nav > .open > a, .navbar .navbar-nav > .open > a:focus {
+  background-color: @ws-blue-dark;
+  color: @white;
+}
+
+.navbar .navbar-nav .split-button .left {
+  border-right: none;
+}
+
+.navbar .navbar-nav .active > a, .navbar .navbar-nav .active > a:hover {
+   color: @white;
+}
+
+.navbar .navbar-nav .split-button.active > a {
+    color: @white;
+}

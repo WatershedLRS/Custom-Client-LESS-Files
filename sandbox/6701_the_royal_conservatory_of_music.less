@@ -1,0 +1,62 @@
+/* Custom Chart Colors */
+/*["#241773","#00BCDA","#191919","#727272"]*/
+
+/* Custom Colors */
+@white: #ffffff;
+@gray: #727272;
+@gray-light: @gray;
+@gray-lighter: #e5e5e5;
+@gray-darker: #191919;
+@gray-dark: @gray-darker;
+@ws-blue-light: @gray-lighter;
+@ws-blue: #241773;
+@ws-blue-dark: #00BCDA;
+@wsLinkColor: #241773;
+@config-background: #252525;
+@config-link: @white;
+
+/* Rebrand modifications */
+@navbar-default-link-active-bg: @ws-blue-dark;
+@ws-alternate: @ws-blue;
+@ws-secondary-blue-light: @ws-blue-light;
+@config-pagination-background: @ws-blue;
+@tableRowSelectionColor: @ws-secondary-blue-light;
+@wsBigBlockTextColor: @ws-blue;
+
+/* Main Navbar */
+.navbar-default, body {
+  background: @white;
+}
+
+.navbar .navbar-nav > li > a,
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav .split-button > a,
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus,
+.navbar .navbar-nav .split-button > a:hover {
+    color: @wsLinkColor;
+}
+
+.navbar .navbar-nav .split-button.active > a,
+.navbar .navbar-nav .split-button.active > a:hover {
+    color: @gray-lightest;
+}
+
+.navbar .navbar-nav .split-button {
+    .left {
+        border-right-color: transparent;
+    }
+
+    &.active {
+        .left {
+            border-right-color: @white;
+        }
+    }
+}
+
+/* Card */
+.card-wrapper .card {
+    border: 1px solid fade(@wsLinkColor, 50%);
+}

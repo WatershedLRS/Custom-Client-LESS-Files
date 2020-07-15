@@ -1,0 +1,48 @@
+@gray:#8C8C8C;
+@gray-light:#C4C4C4;
+@gray-lighter:#E8E8E8;
+@gray-dark:#525252;
+@gray-darker:#1E1E1E;
+
+@ws-blue-lighter: @gray-lighter;
+@ws-blue-light: @gray-light;
+@ws-blue: @gray;
+@ws-blue-dark: @gray;
+@ws-blue-darker: @gray-dark;
+
+@wsLinkColor:  @gray-darker;
+
+/* Rebrand modifications */
+@navbar-default-link-active-bg: @ws-blue-dark;
+@ws-alternate: @ws-blue;
+@ws-secondary-blue-light: @ws-blue-light;
+@config-link: @white;
+@wsBigBlockTextColor: @ws-blue;
+
+.navbar-default, body {
+  background: @white;
+}
+
+.card-header .svg-sprite {
+  opacity: 1;
+}
+
+.navbar .main-nav > li > a, .navbar .navbar-nav .split-button > a {
+  color: @wsLinkColor;
+}
+
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav .split-button:hover> a, .navbar .main-nav > li.active > a, .navbar .navbar-nav .split-button.active > a, .detail .detail-header .date a, .detail .detail-header .date span {
+  color: @white;
+}
+
+.navbar .navbar-nav.bell > li > a:hover, .navbar .navbar-nav.bell .split-button:hover, .navbar .navbar-nav.bell .split-button:hover > a {
+  color: @gray-light;
+}
+
+.navbar .navbar-nav .split-button .left {
+  border-right-color: @ws-blue-darker;
+}
+
+.assessments-groupchart-td .legend {
+  display: none;
+}

@@ -1,0 +1,28 @@
+/* Custom Colors */
+/*
+Brand Colors
+#56D500 Bayer Green
+#00314E Bayer Dark Blue
+#01BEFF Bayer Light Blue
+*/
+
+@ws-blue-light: #01BEFF; // Bayer Light Blue
+@ws-blue: #00314E; // Bayer Dark Blue
+@ws-blue-dark: #56D500; // Bayer Green 
+@wsLinkColor: @ws-blue;
+@white: #ffffff;
+
+/* Main Navbar */
+.navbar-default {
+    background-color: @white;
+}
+
+//Changes default text color in navbar for Dashboard Data and Explore
+.navbar .main-nav > li > a, .navbar .navbar-nav .split-button > a {
+  color: @ws-blue;
+}
+
+//Changes default text color in top right navbar SETTINGS ADMIN HELP
+.navbar .navbar-nav.navbar-right > li > a, .navbar .navbar-nav .split-button.active > a {
+  color: @ws-blue;
+}
